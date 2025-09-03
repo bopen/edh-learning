@@ -1,0 +1,11 @@
+title = "Earth Data Hub Gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "earthdatahub-personal-access-token"
+description = "Found a Earth Data Hub Personal Access Token"
+regex = '''edh_pat_[0-9a-zA-Z]{96}'''
+entropy = 3
+keywords = ["edh_pat_"]
