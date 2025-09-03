@@ -15,3 +15,8 @@ dependencies = [
     "xarray>=2025.8.0",
     "zarr<=3",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+]
