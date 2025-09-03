@@ -1,0 +1,17 @@
+[project]
+name = "edh-notebooks"
+version = "0.1.0"
+description = "Earth Data Hub example notebooks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.12.15",
+    "cartopy>=0.25.0",
+    "dask>=2025.7.0",
+    "jupyterlab>=4.4.6",
+    "jupyterlab-execute-time>=3.2.0",
+    "matplotlib>=3.10.6",
+    "s3fs>=2025.7.0",
+    "xarray>=2025.8.0",
+    "zarr<=3",
+]
