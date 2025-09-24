@@ -1,6 +1,6 @@
 # edh-learning
 
-Earth Data Hub learning resources
+Earth Data Hub learning notebook!
 
 ## Setup
 
