@@ -1,6 +1,6 @@
 # edh-learning
 
-Earth Data Hub learning notebook!
+[Earth Data Hub](https://earthdatahub.destine.eu/) learning notebook!
 
 ## Setup
 
