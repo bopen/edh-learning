@@ -1,6 +1,7 @@
 # edh-learning
 
-[Earth Data Hub](https://earthdatahub.destine.eu/) learning notebook!
+This repo contains a few notebooks to learn how to use the
+[Earth Data Hub](https://earthdatahub.destine.eu/) service.
 
 ## Setup
 
@@ -12,5 +13,5 @@ environment without messing up your existing Python installations.
 ```bash
 git clone git@github.com:bopen/edh-learning.git
 cd edh-learning
-uv run jupyter lab
+uv run --frozen jupyter lab
 ```
