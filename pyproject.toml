@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "aiohttp>=3.12.15",
     "dask>=2025.7.0",
+    "geoviews>=1.15.1",
     "jupyterlab>=4.4.6",
     "jupyterlab-execute-time>=3.2.0",
     "matplotlib>=3.10.6",
