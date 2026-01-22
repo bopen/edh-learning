@@ -15,3 +15,12 @@ git clone git@github.com:bopen/edh-learning.git
 cd edh-learning
 uv run --frozen jupyter lab
 ```
+
+### Optional interactive map support
+
+You can start Jupyter Lab with support for interactive data exploration and map
+integration (at the cost of a much more complex installation) with:
+
+```bash
+uv run --frozen --extra maps jupyter lab
+```
