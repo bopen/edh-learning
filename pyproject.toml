@@ -15,5 +15,12 @@ dependencies = [
     "zarr>=3.1.2",
 ]
 
+[project.optional-dependencies]
+maps = [
+    "cartopy>=0.25.0",
+    "datashader>=0.18.2",
+    "hvplot>=0.12.2",
+]
+
 [dependency-groups]
 dev = ["pre-commit>=4.3.0"]
