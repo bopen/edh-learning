@@ -1,7 +1,10 @@
 # edh-learning
 
-This repo contains a few notebooks to learn how to use the
-[Earth Data Hub](https://earthdatahub.destine.eu/) service.
+This repo is a Jupyter notebook-based learning resource for the [Earth Data Hub (EDH)](https://earthdatahub.destine.eu/), a cloud platform for accessing climate and Earth observation Zarr data via Python and Xarray.
+
+**Key Purpose**: Educational notebooks demonstrating best practices for data access, authentication, transformation, and visualization workflows for EDH climate and geospatial datasets.
+
+**Target Users**: Data scientists and developers learning to work with the EDH Zarr datasets.
 
 ## Setup
 
