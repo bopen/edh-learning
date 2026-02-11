@@ -24,6 +24,11 @@ maps = [
     "datashader>=0.18.2",
     "hvplot>=0.12.2",
 ]
+nbconvert = [
+    "lxml-html-clean>=0.4.3",
+    "nbconvert>=6.5.4",
+    "notebook<6"
+]
 
 [dependency-groups]
 dev = [
