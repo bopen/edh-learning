@@ -9,3 +9,10 @@ description = "Found a Earth Data Hub Personal Access Token"
 regex = '''edh_pat_[0-9a-zA-Z]{96}'''
 entropy = 3
 keywords = ["edh_pat_"]
+
+[[rules]]
+id = "earthdatahub-api-key"
+description = "Found an Earth Data Hub API key"
+regex = '''edh_key_[0-9a-zA-Z_-]{43}'''
+entropy = 3
+keywords = ["edh_key_"]
