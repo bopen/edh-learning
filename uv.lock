@@ -842,6 +842,22 @@ wheels = [
 ]
 
 [[package]]
+name = "cmasher"
+version = "1.9.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorspacious" },
+    { name = "matplotlib" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.12'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ef/47/382f6fca1400993f3590fbd8a2e282879e7d7cb388c10086cd3dcbf59d2d/cmasher-1.9.4.tar.gz", hash = "sha256:e372f716205c83b5eb4d167e553a8f24527a8473c33df01b2f3aa20819eae22c", size = 525813, upload-time = "2026-10-09T17:18:10.325Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0d/dd/6bb53b2d020696a673f8468bdac73c2ccb34db770c738b1cd45a87113f56/cmasher-1.9.4-py3-none-any.whl", hash = "sha256:787ed0193e3ff7c124d0d9f336e490501cbf027e88868bb50d170f06a16440e9", size = 506754, upload-time = "2026-10-09T17:18:08.614Z" },
+]
+
+[[package]]
 name = "codespell"
 version = "2.4.3"
 source = { registry = "https://pypi.org/simple" }
@@ -866,6 +882,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/3f/af/b969f541242b84cbbacabdf20862e487689e352bf0f02f90df2795d29da5/colorcet-3.2.1.tar.gz", hash = "sha256:48d9a67e6e59dc5c0a965aa1b46fe5d59cdc95cc36a95949f29313f950ac59f7", size = 2202958, upload-time = "2026-04-28T16:25:37.43Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1b/24/e95471ae93c08d3606c9c7343cf65d490f154daa88b50581957a0aa780f4/colorcet-3.2.1-py3-none-any.whl", hash = "sha256:3f6fde13cef2169222dd5fe2a2bf847c02d644470fdf167ed566f6421df470f7", size = 262291, upload-time = "2026-04-28T16:25:35.365Z" },
+]
+
+[[package]]
+name = "colorspacious"
+version = "1.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/75/e4/aa41ae14c5c061205715006c8834496d86ec7500f1edda5981f0f0190cc6/colorspacious-1.1.2.tar.gz", hash = "sha256:5e9072e8cdca889dac445c35c9362a22ccf758e97b00b79ff0d5a7ba3e11b618", size = 688573, upload-time = "2018-04-08T04:27:30.83Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/a1/318b9aeca7b9856410ededa4f52d6f82174d1a41e64bdd70d951e532675a/colorspacious-1.1.2-py2.py3-none-any.whl", hash = "sha256:c78befa603cea5dccb332464e7dd29e96469eebf6cd5133029153d1e69e3fd6f", size = 37735, upload-time = "2018-04-08T04:27:22.143Z" },
 ]
 
 [[package]]
@@ -1190,6 +1219,7 @@ dependencies = [
 [package.optional-dependencies]
 maps = [
     { name = "cartopy" },
+    { name = "cmasher" },
     { name = "datashader" },
     { name = "hvplot" },
 ]
@@ -1212,6 +1242,7 @@ requires-dist = [
     { name = "aiohttp-client-cache", extras = ["filesystem", "sqlite"], specifier = ">=0.14.3" },
     { name = "cartopy", marker = "extra == 'maps'", specifier = ">=0.25.0" },
     { name = "cftime", specifier = ">=1.6.5" },
+    { name = "cmasher", marker = "extra == 'maps'", specifier = ">=1.9.4" },
     { name = "dask", specifier = ">=2025.7.0" },
     { name = "datashader", marker = "extra == 'maps'", specifier = ">=0.18.2" },
     { name = "geoviews", specifier = ">=1.15.1" },
